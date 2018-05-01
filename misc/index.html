@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tule mängi footgolfi! UUS</title>
+        <link href="css/golf.css" rel="stylesheet">
+    </head>
+    <body>
+       
+        <a href="#" onclick="window.open(dparams.getVar('clicktag'), '_blank');return false;">
+            <div id="hh">
+				<img src="img/fg_pall.png" id="jalgpall">
+				<img src="img/uus.png" id="uus_text">
+				<img src="img/mo_text.png" id="mo_text">
+				<img src="img/p6nev.png" id="p6nev_text">
+                <div id="hh-img-container">
+                    <img src="img/sg-rohe.jpg" id="hhPic">
+                </div>
+                <div id="hh-img-container">
+                    <img src="img/mo_sini.jpg" id="moPic">
+                </div>
+
+                <img src="img/tel.png" id="hhKuula">
+                <img src="img/mail.png" id="hhMail">
+                
+            </div>
+        </a>
+		<script src="HackTimer.min.js"></script>        
+		<script src="velocity.min.js"></script>        
+        <script>
+            
+			function DeltaTimer(render, interval) {
+				var timeout;
+				var lastTime;
+
+				this.start = start;
+				this.stop = stop;
+
+				function start() {
+					timeout = setTimeout(loop, 0);
+					lastTime = + new Date;
+					return lastTime;
+				}
+
+				function stop() {
+					clearTimeout(timeout);
+					return lastTime;
+				}
+
+				function loop() {
+					var thisTime = + new Date;
+					var deltaTime = thisTime - lastTime;
+					var delay = Math.max(interval - deltaTime, 0);
+					timeout = setTimeout(loop, delay);
+					lastTime = thisTime + delay;
+					render(thisTime);
+				}
+			}
+		
+			function loopanim(){
+				
+			var mopic = document.querySelectorAll("#moPic");
+            var pall = document.querySelectorAll("#jalgpall");
+            var uus = document.querySelectorAll("#uus_text");
+            var mo = document.querySelectorAll("#mo_text");
+            var p6nev = document.querySelectorAll("#p6nev_text");
+				
+			Velocity(pall, { opacity: 1 }, {delay: 30, duration: 900, easing: [ 250, 15 ]});
+			Velocity(uus, { translateX: 185, opacity: 1 }, {delay: 0, duration: 900, easing: [ 250, 15 ]});
+			Velocity(mopic, { opacity: 1 }, { delay: 5000, }, {duration: 1000});
+			Velocity(pall, { opacity: 0 }, {delay: 4000, duration: 300});
+			Velocity(uus, { translateX: 1000, opacity: 0 }, {delay: 4000, duration: 500});
+			Velocity(mo, { translateY: 200, opacity: 1 }, {delay: 5100, duration: 900, easing: [ 250, 15 ]});
+			Velocity(uus, { translateX: 0, opacity: 0 }, {delay: 4000, duration: 10});
+			Velocity(mo, { translateY: -200, opacity: 0 }, {delay: 4000, duration: 400});
+			Velocity(p6nev, { translateY: 200, opacity: 1 }, {delay: 10100, duration: 900, easing: [ 250, 15 ]});
+			Velocity(p6nev, { translateY: -200, opacity: 0 }, {delay: 4000, duration: 400});
+			Velocity(mopic, { opacity: 0 }, { delay: 4000, }, {duration: 1000});
+			
+			}		
+           var timer = new DeltaTimer(function (time) {
+			    loopanim();
+				console.log("kukimuki " + (time - start) + " ms");
+		   }, 16000); 
+			
+			var start = timer.start();
+        </script>
+    </body>
+</html>

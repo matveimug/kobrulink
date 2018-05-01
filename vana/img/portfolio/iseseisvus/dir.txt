@@ -1,0 +1,11 @@
+ Volume in drive E is suur p””rlev ketas
+ Volume Serial Number is B42A-3BF1
+
+ Directory of E:\Box Sync\kobruleht\img\portfolio\iseseisvus
+
+[.]           [..]          dir.txt       ise (1).jpg   ise (1).png
+ise (2).jpg   ise (2).png   ise (3).jpg   ise (3).png   ise (4).jpg
+ise (4).png   ise (5).jpg   ise (5).png   ise (6).jpg   ise (6).png
+ise (7).jpg   ise (8).jpg   
+              15 File(s)      2ÿ574ÿ006 bytes
+               2 Dir(s)  112ÿ906ÿ858ÿ496 bytes free

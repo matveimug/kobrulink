@@ -1,0 +1,18 @@
+                                                                ___          ___    
+  /\\,/\\,        |\                        _-_ _,,     ,- _~, -   ---___-  -   -_, 
+ /| || ||    _     \\   '                      -/  )   (' /| /    (' ||    (  ~/||  
+ || || ||   < \,  / \\ \\ \\ \\  _-_,         ~||_<   ((  ||/=   ((  ||    (  / ||  
+ ||=|= ||   /-|| || || || || || ||_.           || \\  ((  ||    ((   ||     \/==||  
+~|| || ||  (( || || || || || ||  ~ ||          ,/--||  ( / |     (( //      /_ _||  
+ |, \\,\\,  \/\\  \\/  \\ \\/\\ ,-_-          _--_-'    -____-     -____-  (  - \\, 
+_-                                           (                                      
+                                                                                    
+
+Madius on oma lõbuks ja madisvaher.ee jaoks tehtud kirjastiil, mida võib soovi korral
+igaüks vabalt ja tasuta kasutada. Kirja ttf-kujule viimiseks kasutasin vabavaralist
+programmi FontForge. Kes arvab, et mingid asjad on väga koledad või et kernimine ei
+kannata üleüldse mingisugust kriitikat, võib julgesti ühendust võtta ja teada anda,
+mis täht rõve tundub, või kuidas üldse teha nii, et kernimisväärtused ka fondifaili 
+sisse kinni jääb, sest ma ise pole seda päris õiget kohta FontForge-st leidnud.
+
+--- Meeldetuletuseks --- www.madisvaher.ee --- madis.vaher@gmail.com --- PEACE ----

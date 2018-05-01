@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+                                        
+                    |\                  
+           _        \\   '             
+    \\/\\/\\  < \,  / \\ \\ \\ \\  _-_, 
+    || || ||  /-|| || || || || || ||_.  
+    || || || (( || || || || || ||  ~ || 
+    \\ \\ \\  \/\\  \\/  \\ \\/\\ ,-_-
+    ___________________________________
+	----- vjacheslavik.tumblr.com -----
+
+
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="portfolio & kontakt">
+    <meta name="author" content="Madis Vaher">
+    <meta name="theme-color" content="#000000">
+    <title>Madis Vaher</title>
+    <link rel="stylesheet" href="stiil.css" />
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src='jquery.zoom.min.js'></script>
+    <script src="typed.js"></script>
+    <script src="jquery.unveil.js"></script>
+    <script src="jquery.appear.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('img')
+                .unveil(300, function() {
+                    $(this).addClass('visible');
+                    if ($(this).attr('src') === $(this).attr('data-src') && $(this).hasClass('zm')) {
+                        var rand = Math.floor(Math.random() * 21) - 10;
+                        $(this)
+                            .wrap('<div class="zoom" style="display:inline-block;margin-left:' + rand + '"></div>')
+                            .css('display', 'block')
+                            .parent()
+                            .zoom({
+                                on: 'grab',
+                                touch: "false",
+                                magnify: "1.1",
+                                onZoomIn: function() {
+                                    $(this).closest('.zm')
+                                        .css('opacity', '0');
+                                    $(this).closest('.zoomImg')
+                                        .css('opacity', '1');
+                                },
+                                onZoomOut: function() {
+                                    $(this).closest('.zm')
+                                        .css('opacity', '1');
+                                    $(this).closest('.zoomImg')
+                                        .css('opacity', '0');
+                                }
+                            })
+                    }
+                    console.log($(this).attr('src') + ' loaded');
+                });
+
+            $('video')
+                .appear(function() {
+                    console.log("video");
+                });
+
+
+            $("#typed").typed({
+                stringsElement: $('#typed-strings'),
+                shuffle: false,
+                showCursor: false,
+                typeSpeed: 1,
+                startDelay: 1000,
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="typed-strings" class="mv-txt">
+        <p>hei!</p>
+        <p>hey!</p>
+        <p>mõned viimasemad tööd</p>
+        <p>some recent works</p>
+        <p>graphic design etc <span class="kitsas">&#8212;&#8212;&#8212;</span><br> madis.vaher@gmail.com 5665 7676</p>
+    </div>
+    <span id="typed"></span>
+    <span id="typed2"></span>
+
+    <div class="mv-gal">
+
+        <div id="column1">
+
+            <img src="liiv.gif" class="zm" data-src="img/ilandart.jpg" data-hover="poster & graphics for I LAND ART">
+            <img src="liiv.gif" class="zm" data-src="img/NUTIKUS.png" data-hover="illustrations for OSKUSTE AASTA">
+            <img src="liiv.gif" class="zm" data-src="img/SOTSIAALMEEDIA.png" data-hover="illustrations for OSKUSTE AASTA">
+            <a target="_blank" href="http://kont.rast.ee"
+            data-hover="design/AD for KONTRAST II (click for catalogue)"><img src="liiv.gif" data-src="img/kontrast2.png"></a>
+            <img src="liiv.gif" class="zm" data-src="img/duud5.jpg" data-hover="exhibition piece for KONTRAST 2">
+            <img src="liiv.gif" class="zm" data-src="img/paras.jpg" data-hover="personal work">
+            <img src="liiv.gif" class="zm" data-src="img/dm2.png" data-hover="personal work / DISAINIMAJAKAS promo">
+            <img src="liiv.gif" class="zm" data-src="img/tier2.png" data-hover="poster for TIER 2">
+            <img src="liiv.gif" class="zm" data-src="img/vizit.jpg" data-hover="business card for MARIA EVESTUS">
+            <img src="liiv.gif" class="zm" data-src="img/thule3dDOF.png" data-hover="design for THULE art show">
+            <img src="liiv.gif" class="zm" data-src="img/thule3d.png" data-hover="design for THULE art show">
+            <img src="liiv.gif" class="zm" data-src="img/diss021.jpg" data-hover="SPECTATOR - art project for B7">
+            <img src="liiv.gif" class="zm" data-src="img/dm%20(2).png" data-hover="DISAINIMAJAKAS logo">
+            <img src="liiv.gif" class="zm" data-src="img/dm1.jpg" data-hover="DISAINIMAJAKAS alternative logo">
+            <img src="liiv.gif" class="zm" data-src="img/uyguyt.jpg" data-hover="personal work">
+            <img src="liiv.gif" class="zm" data-src="img/kiir_tyhi_suur.jpg" data-hover="design/AD for KIIR 2016 student art show">
+            <img src="liiv.gif" class="zm" data-src="img/Image0023.jpg" data-hover="design/AD for FW16 art show">
+            <img src="liiv.gif" class="zm" data-src="img/dmteabe%20(3).JPG" data-hover="wayfinding icons for DISAINIMAJAKAS">
+            <img src="liiv.gif" class="zm" data-src="img/plax2veeb.jpg" data-hover="poster for TIER 1">
+            <video autoplay loop data-hover="all sorts of things for NOOR MEISTER 2015" src="liiv.gif" data-src="vid/anim1.mp4" type="video/mp4"></video>
+            <img src="liiv.gif" class="zm" data-src="img/tips.jpg" data-hover="personal work / exercise for 3D course">
+
+        </div>
+        <div id="column2">
+
+            <img src="liiv.gif" class="zm" data-src="img/esikaas.jpg" data-hover="spoke thing for TOUR d'ÖÖ KURESSAARE">
+            <img src="liiv.gif" class="zm" data-src="img/thingy.jpg" data-hover="unused exhibition piece for KONTRAST 2">
+            <img src="liiv.gif" class="zm" data-src="img/deer.jpg" data-hover="unused exhibition piece for KONTRAST 2">
+            <video autoplay loop data-hover="motion graphics for OSKUSTE AASTA" src="vid/oatitle.mp4" type="video/mp4"></video>
+            <img src="liiv.gif" class="zm" data-src="img/logo_fb.png" data-hover="design/AD for OSKUSTE AASTA">
+            <img src="liiv.gif" class="zm" data-src="img/tier3.jpg" data-hover="poster for TIER 3">
+            <img src="liiv.gif" class="zm" data-src="img/ise%20(4).jpg" data-hover="VEILS - art project for ISESEISVUS art show">
+            <img src="liiv.gif" class="zm" data-src="img/0003.png" data-hover="tryout work for PRAKTIK CUM LAUDE">
+            <img src="liiv.gif" class="zm" data-src="img/kaasav.jpg" data-hover="design for KURESSAARE KAASAV EELARVE">
+            <img src="liiv.gif" class="zm" data-src="img/kaklipp.jpg" data-hover="logo for KURESSAARE AMETIKOOL">
+            <img src="liiv.gif" class="zm" data-src="img/kfn_A2.png" data-hover="design/AD for KURESSAARE FILMINÄDAL">
+            <video autoplay loop data-hover="motion graphics for KURESSAARE FILMINÄDAL" src="liiv.gif" data-src="vid/anim_veeb.mp4" type="video/mp4"></video>
+            <img src="liiv.gif" class="zm" data-src="img/qwe-01-01.png" data-hover="design for THULE art show">
+            <img src="liiv.gif" class="zm" data-src="img/kontrast-cmpr.png" data-hover="design/AD for KONTRAST art show">
+            <img src="liiv.gif" class="zm" data-src="img/kutsed.jpg" data-hover="design/AD for KIIR art show">
+            <img src="liiv.gif" class="zm" data-src="img/mardu.jpg" data-hover="hotel MARDI logo">
+            <img src="liiv.gif" class="zm" data-src="img/Scan%202.jpg" data-hover="KONTRAST catalogue design">
+            <img src="liiv.gif" class="zm" data-src="img/Scan%203.jpg" data-hover="KONTRAST catalogue design">
+            <a target="_blank" href="http://madisvaher.ee/fonts/Madius/madius.ttf"
+            data-hover="personal typography project, MADIUS.ttf (click to download)"
+            ><img src="liiv.gif" data-src="img/kaugelt.jpg"></a>
+        </div>
+
+    </div>
+    <a href="https://docs.google.com/document/d/1lNbEcAjAU6TN1chcOqr6KHyNpzrtFI_6rKTNS92hffU/edit"
+       target="_blank" data-hover="Curriculum Vitæ">
+        <span class="cv">CV</span>
+    </a>
+
+    <script src="jquery.appear.js"></script>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function(){ window.scrollTo(0,0); }, 600);
+        });
+        $('img, video, a')
+            .mouseover(function() {
+                console.log($(this).attr('data-hover'))
+                $("#typed2").typed({
+                    strings: [$(this).attr('data-hover')],
+                    shuffle: true,
+                    showCursor: false,
+                    typeSpeed: 1,
+                    startDelay: 500,
+                });
+            });
+
+        $('video').on('appear', function() {
+            $(this).attr("src", $(this).attr("data-src"));
+            $(this).removeAttr("data-src");
+            console.log($(this).attr("src") + " video loaded")
+        });
+    </script>
+</body>
+
+</html>
